@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { assets } from '../../assets/gemini-clone-assets/assets/assets';
+import { Context } from '../context';
 import './Sidebar.css';
 
 const Sidebar = () => {
 
-    const [extended, setExtended] = useState(false);
+    const [extended, setExtended] = useState(true);
+    const {onSend, prevPrompts, setRecentPrompt} = useContext(Context);
     const sidebarWidth = extended ? "284px" : "68px";
+
     return (
         <div className='sidebar' style={{ width: sidebarWidth }}>
             <div className="top">
@@ -17,10 +20,15 @@ const Sidebar = () => {
                 {extended ? 
                     <div className="recent">
                         <p className="recent-title">Recent</p>
-                        <div className="recent-entry">
-                            <img src={assets.message_icon} alt="" />
-                            <p>What is react...</p>
-                        </div>
+                        {prevPrompts.map((item, index) => {
+                            return (
+                                <div className="recent-entry">
+                                    <img src={assets.message_icon} alt="" />
+                                    <p>{item.slice(0, 18)} ....</p>
+                                </div>
+                                
+                            )
+                        })}
                     </div>
                 : null}
             </div>

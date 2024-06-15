@@ -23,15 +23,19 @@
     align-items: center;
     gap: 10px;
     padding: 10px 10px;
-    background-color: #DCE1E7;
+    background-color: #E6E8EC;
     border-radius: 50px;
     font-size: 16px;
     color: #474f5a;
     cursor: pointer;
 }
 
+.sidebar .new-chat:hover {
+    background-color: #DCE1E7;
+}
+
 .sidebar .new-chat p {
-    padding-left: 10px;
+    padding-left: 8px;
     padding-right: 8px;
 }
 
