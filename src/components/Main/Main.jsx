@@ -65,8 +65,8 @@ const Main = () => {
                                 </>
                 :   <div className="result">
                         <div className="result-title">
-                            <img src={assets.user_icon} alt="" />
-                            <p>{recentPrompt}</p>
+                            <a href="https://github.com/Raj-Dusane/Gemini" target="_blank"><img src={assets.user_icon} alt="" /></a>
+                            <p style={{fontSize:'19px'}}>{recentPrompt}</p>
                         </div>
                         <div className="result-data">
                             <img src={assets.gemini_icon} alt="" />
@@ -88,7 +88,7 @@ const Main = () => {
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
-                            <img onClick={() => onSend()} src={assets.send_icon} alt="" />
+                            {input ? <img onClick={() => onSend()} src={assets.send_icon} alt="" /> : null }
                         </div>
                     </div>
                     <p className="bottom-info">

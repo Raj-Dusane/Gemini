@@ -74,6 +74,7 @@
     flex-direction: column;
 }
 
+
 .sidebar .bottom-item {
     padding-right: 10px;
     cursor: pointer;
@@ -81,4 +82,21 @@
 
 .sidebar .bottom-item img {
     width: 18px;
+}
+
+.github-link {
+    margin-left: 7px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.github-link img {
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
 }
