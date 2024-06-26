@@ -5,12 +5,12 @@ Gemini-clone: A React-Vite based project, replicates the functionality of Gemini
 
 ## Contents
 
- - [Introduction]()
- - [Features]()
- - [Installation]()
- - [Environment Variables]()
- - [Documentation]()
- - [Screenshots]()
+ - [Introduction](https://github.com/Raj-Dusane/Gemini/tree/main?tab=readme-ov-file#introduction)
+ - [Features](https://github.com/Raj-Dusane/Gemini/tree/main?tab=readme-ov-file#features)
+ - [Installation](https://github.com/Raj-Dusane/Gemini/tree/main?tab=readme-ov-file#installation)
+ - [Environment Variables](https://github.com/Raj-Dusane/Gemini/tree/main?tab=readme-ov-file#environment-variables)
+ - [Documentation](https://github.com/Raj-Dusane/Gemini/tree/main?tab=readme-ov-file#documentation)
+ - [Screenshots](https://github.com/Raj-Dusane/Gemini/tree/main?tab=readme-ov-file#screenshots)
 
 
 ## Introduction
